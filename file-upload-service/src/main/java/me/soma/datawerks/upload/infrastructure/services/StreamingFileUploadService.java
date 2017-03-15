@@ -1,4 +1,4 @@
-package me.soma.datawerks.serviceImpl;
+package me.soma.datawerks.upload.infrastructure.services;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -8,22 +8,29 @@ import java.io.OutputStream;
 
 import javax.servlet.http.HttpServletRequest;
 
+import me.soma.datawerks.upload.domain.services.FileUploadService;
+import me.soma.datawerks.upload.domain.services.NotificationService;
 import org.apache.tomcat.util.http.fileupload.FileItemIterator;
 import org.apache.tomcat.util.http.fileupload.FileItemStream;
 import org.apache.tomcat.util.http.fileupload.FileUploadException;
 import org.apache.tomcat.util.http.fileupload.IOUtils;
 import org.apache.tomcat.util.http.fileupload.servlet.ServletFileUpload;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.core.env.Environment;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.cloud.context.config.annotation.RefreshScope;
 import org.springframework.stereotype.Component;
+import org.springframework.stereotype.Service;
 
-import me.soma.datawerks.service.FileUploadService;
+@Service
+@RefreshScope
+public class StreamingFileUploadService implements FileUploadService {
 
-@Component
-public class FileUploadServiceImpl implements FileUploadService {
-	
 	@Autowired
-	Environment env;
+	private NotificationService notificationService;
+
+	@Value("${upload.folder}")
+	private String path;
+
 
 	@Override
 	public String fileUpload(HttpServletRequest file) throws FileUploadException, IOException {
@@ -37,15 +44,17 @@ public class FileUploadServiceImpl implements FileUploadService {
 			checkValidExtension(fileName);
 			InputStream stream = item.openStream();
 			if (!item.isFormField()) {
-				File folderName = new File(env.getProperty("upload.folder")+fileName);
+				File folderName = new File(path+fileName);
 				OutputStream out = new FileOutputStream(folderName);
 				IOUtils.copy(stream, out);
 				stream.close();
 				out.close();
 			}
 		}
+		notificationService.notifyComplete(fileName);
 		return fileName;
 	}
+
 
 	@Override
 	public boolean isMultiPart(HttpServletRequest file) {
@@ -53,7 +62,7 @@ public class FileUploadServiceImpl implements FileUploadService {
 	}
 	
 	void checkValidExtension(String fileName){
-		String fileExtentions = ".mkv";
+		String fileExtentions = ".csv";
 		String substring = fileName.substring(fileName.lastIndexOf('.'), fileName.length());
 		if(! fileExtentions.contains(substring)){
 			throw new IllegalArgumentException("File format is not correct");

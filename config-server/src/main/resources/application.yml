@@ -1,0 +1,69 @@
+server:
+  port: ${appPort:8888}
+
+# Actuator endpoint path (/admin/info, /admin/health, ...)
+management.context-path: /admin
+
+# http://docs.spring.io/spring-boot/docs/current/reference/htmlsingle/#production-ready-endpoints
+endpoints:
+  enabled: false
+  info:
+    enabled: true
+  health:
+    enabled: true
+  metrics:
+    enabled: true
+
+info:
+  app:
+    name: @project.artifactId@
+  build:
+    version: @project.version@
+
+spring:
+  cloud:
+    bus:
+      enabled: false
+    config:
+      server:
+        git :
+          uri: https://github.com/somasundaramsekar/datawerk-assignment-config
+
+---
+spring:
+  rofiles: registration-first
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/
+  instance:
+    hostname: localhost
+    statusPageUrlPath: ${management.context-path}/info
+    healthCheckUrlPath: ${management.context-path}/health
+    preferIpAddress: true
+    metadataMap:
+      instanceId: ${spring.application.name}:${server.port}
+
+---
+spring:
+  profiles: config-monitor
+  cloud:
+    bus:
+      enabled: true
+  rabbitmq:
+    host: white-mynah-bird.rmq.cloudamqp.com
+    port: 5672
+    virtual-host: fpmjbsta
+    username: fpmjbsta
+    password: BDi6b8zNMjeulvKXoJvRD3omBgwqOZg1
+
+# ConfigServer endpoints to read configuration properties:
+#/{application}/{profile}[/{label}]
+#/{application}-{profile}.yml
+#/{label}/{application}-{profile}.yml
+#/{application}-{profile}.properties
+#/{label}/{application}-{profile}.properties
+
+

@@ -1,0 +1,5 @@
+spring:
+ hostName: localhost
+ environment: local
+ dataCenter: ${hostName}
+ peerUrls: http://localhost:${server.port}/eureka/

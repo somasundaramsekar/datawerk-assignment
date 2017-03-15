@@ -1,0 +1,191 @@
+[INFO] Scanning for projects...
+[INFO]                                                                         
+[INFO] ------------------------------------------------------------------------
+[INFO] Building config-server 0.0.1-SNAPSHOT
+[INFO] ------------------------------------------------------------------------
+[INFO] 
+[INFO] --- maven-clean-plugin:2.6.1:clean (default-clean) @ config-server ---
+[INFO] Deleting /workspace/datawerk-assignment/config-server/target
+[INFO] 
+[INFO] >>> spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) > test-compile @ config-server >>>
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:resources (default-resources) @ config-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] Copying 1 resource
+[INFO] Copying 1 resource
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:compile (default-compile) @ config-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 2 source files to /workspace/datawerk-assignment/config-server/target/classes
+[INFO] 
+[INFO] --- maven-resources-plugin:2.6:testResources (default-testResources) @ config-server ---
+[INFO] Using 'UTF-8' encoding to copy filtered resources.
+[INFO] skip non existing resourceDirectory /workspace/datawerk-assignment/config-server/src/test/resources
+[INFO] 
+[INFO] --- maven-compiler-plugin:3.1:testCompile (default-testCompile) @ config-server ---
+[INFO] Changes detected - recompiling the module!
+[INFO] Compiling 1 source file to /workspace/datawerk-assignment/config-server/target/test-classes
+[INFO] 
+[INFO] <<< spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) < test-compile @ config-server <<<
+[INFO] 
+[INFO] --- spring-boot-maven-plugin:1.5.2.RELEASE:run (default-cli) @ config-server ---
+2017-03-10 17:08:21.816  INFO 4161 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@64a50cf2: startup date [Fri Mar 10 17:08:21 UTC 2017]; root of context hierarchy
+2017-03-10 17:08:23.462  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6791e30b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::        (v1.5.2.RELEASE)
+
+2017-03-10 17:08:24.714  INFO 4161 --- [           main] m.s.datawerks.ConfigServerApplication    : The following profiles are active: config-monitor
+2017-03-10 17:08:24.763  INFO 4161 --- [           main] ationConfigEmbeddedWebApplicationContext : Refreshing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f88a1b9: startup date [Fri Mar 10 17:08:24 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64a50cf2
+2017-03-10 17:08:28.014  INFO 4161 --- [           main] o.s.i.config.IntegrationRegistrar        : No bean named 'integrationHeaderChannelRegistry' has been explicitly defined. Therefore, a default DefaultHeaderChannelRegistry will be created.
+2017-03-10 17:08:28.921  WARN 4161 --- [           main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'refreshScope' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2017-03-10 17:08:29.352  INFO 4161 --- [           main] o.s.cloud.context.scope.GenericScope     : BeanFactory id=ad0bcf2a-35c3-3881-8b78-4e4852bfcf0e
+2017-03-10 17:08:29.405  INFO 4161 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'errorChannel' has been explicitly defined. Therefore, a default PublishSubscribeChannel will be created.
+2017-03-10 17:08:29.415  INFO 4161 --- [           main] faultConfiguringBeanFactoryPostProcessor : No bean named 'taskScheduler' has been explicitly defined. Therefore, a default ThreadPoolTaskScheduler will be created.
+2017-03-10 17:08:29.560  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration' of type [org.springframework.amqp.rabbit.annotation.RabbitBootstrapConfiguration$$EnhancerBySpringCGLIB$$11e39e3c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-10 17:08:30.177  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [org.springframework.beans.factory.config.PropertiesFactoryBean] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-10 17:08:30.180  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'integrationGlobalProperties' of type [java.util.Properties] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-10 17:08:30.298  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6791e30b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-10 17:08:30.317  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration' of type [org.springframework.cloud.stream.config.BindingServiceConfiguration$PostProcessorConfiguration$$EnhancerBySpringCGLIB$$d3f7e13] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-10 17:08:31.583  INFO 4161 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat initialized with port(s): 8888 (http)
+2017-03-10 17:08:31.613  INFO 4161 --- [           main] o.apache.catalina.core.StandardService   : Starting service Tomcat
+2017-03-10 17:08:31.617  INFO 4161 --- [           main] org.apache.catalina.core.StandardEngine  : Starting Servlet Engine: Apache Tomcat/8.5.11
+2017-03-10 17:08:31.825  INFO 4161 --- [ost-startStop-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2017-03-10 17:08:31.827  INFO 4161 --- [ost-startStop-1] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 7064 ms
+2017-03-10 17:08:32.645  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.ServletRegistrationBean  : Mapping servlet: 'dispatcherServlet' to [/]
+2017-03-10 17:08:32.659  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'metricsFilter' to: [/*]
+2017-03-10 17:08:32.660  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'characterEncodingFilter' to: [/*]
+2017-03-10 17:08:32.660  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'hiddenHttpMethodFilter' to: [/*]
+2017-03-10 17:08:32.660  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'httpPutFormContentFilter' to: [/*]
+2017-03-10 17:08:32.661  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'requestContextFilter' to: [/*]
+2017-03-10 17:08:32.661  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'webRequestLoggingFilter' to: [/*]
+2017-03-10 17:08:32.661  INFO 4161 --- [ost-startStop-1] o.s.b.w.servlet.FilterRegistrationBean   : Mapping filter: 'applicationContextIdFilter' to: [/*]
+2017-03-10 17:08:35.028  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerAdapter : Looking for @ControllerAdvice: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f88a1b9: startup date [Fri Mar 10 17:08:24 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64a50cf2
+2017-03-10 17:08:35.340  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2017-03-10 17:08:35.342  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2017-03-10 17:08:35.355  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/monitor],methods=[POST],consumes=[application/x-www-form-urlencoded]}" onto public java.util.Set<java.lang.String> org.springframework.cloud.config.monitor.PropertyPathEndpoint.notifyByForm(org.springframework.http.HttpHeaders,java.util.List<java.lang.String>)
+2017-03-10 17:08:35.356  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/monitor],methods=[POST]}" onto public java.util.Set<java.lang.String> org.springframework.cloud.config.monitor.PropertyPathEndpoint.notifyByPath(org.springframework.http.HttpHeaders,java.util.Map<java.lang.String, java.lang.Object>)
+2017-03-10 17:08:35.379  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encrypt],methods=[POST]}" onto public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.encrypt(java.lang.String,org.springframework.http.MediaType)
+2017-03-10 17:08:35.380  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encrypt/{name}/{profiles}],methods=[POST]}" onto public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.encrypt(java.lang.String,java.lang.String,java.lang.String,org.springframework.http.MediaType)
+2017-03-10 17:08:35.381  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decrypt/{name}/{profiles}],methods=[POST]}" onto public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.decrypt(java.lang.String,java.lang.String,java.lang.String,org.springframework.http.MediaType)
+2017-03-10 17:08:35.382  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/decrypt],methods=[POST]}" onto public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.decrypt(java.lang.String,org.springframework.http.MediaType)
+2017-03-10 17:08:35.384  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/encrypt/status],methods=[GET]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.config.server.encryption.EncryptionController.status()
+2017-03-10 17:08:35.386  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/key],methods=[GET]}" onto public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.getPublicKey()
+2017-03-10 17:08:35.387  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/key/{name}/{profiles}],methods=[GET]}" onto public java.lang.String org.springframework.cloud.config.server.encryption.EncryptionController.getPublicKey(java.lang.String,java.lang.String)
+2017-03-10 17:08:35.403  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}-{profiles}.yml || /{name}-{profiles}.yaml],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.cloud.config.server.environment.EnvironmentController.yaml(java.lang.String,java.lang.String,boolean) throws java.lang.Exception
+2017-03-10 17:08:35.404  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}/{profiles:.*[^-].*}],methods=[GET]}" onto public org.springframework.cloud.config.environment.Environment org.springframework.cloud.config.server.environment.EnvironmentController.defaultLabel(java.lang.String,java.lang.String)
+2017-03-10 17:08:35.405  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}/{profiles}/{label:.*}],methods=[GET]}" onto public org.springframework.cloud.config.environment.Environment org.springframework.cloud.config.server.environment.EnvironmentController.labelled(java.lang.String,java.lang.String,java.lang.String)
+2017-03-10 17:08:35.406  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{label}/{name}-{profiles}.properties],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.cloud.config.server.environment.EnvironmentController.labelledProperties(java.lang.String,java.lang.String,java.lang.String,boolean) throws java.io.IOException
+2017-03-10 17:08:35.406  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}-{profiles}.json],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.cloud.config.server.environment.EnvironmentController.jsonProperties(java.lang.String,java.lang.String,boolean) throws java.lang.Exception
+2017-03-10 17:08:35.407  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{label}/{name}-{profiles}.json],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.cloud.config.server.environment.EnvironmentController.labelledJsonProperties(java.lang.String,java.lang.String,java.lang.String,boolean) throws java.lang.Exception
+2017-03-10 17:08:35.407  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{label}/{name}-{profiles}.yml || /{label}/{name}-{profiles}.yaml],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.cloud.config.server.environment.EnvironmentController.labelledYaml(java.lang.String,java.lang.String,java.lang.String,boolean) throws java.lang.Exception
+2017-03-10 17:08:35.407  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}-{profiles}.properties],methods=[GET]}" onto public org.springframework.http.ResponseEntity<java.lang.String> org.springframework.cloud.config.server.environment.EnvironmentController.properties(java.lang.String,java.lang.String,boolean) throws java.io.IOException
+2017-03-10 17:08:35.416  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}/{profile}/{label}/**],methods=[GET],produces=[application/octet-stream]}" onto public synchronized byte[] org.springframework.cloud.config.server.resource.ResourceController.binary(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.IOException
+2017-03-10 17:08:35.417  INFO 4161 --- [           main] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped "{[/{name}/{profile}/{label}/**],methods=[GET]}" onto public java.lang.String org.springframework.cloud.config.server.resource.ResourceController.resolve(java.lang.String,java.lang.String,java.lang.String,javax.servlet.http.HttpServletRequest) throws java.io.IOException
+2017-03-10 17:08:35.548  INFO 4161 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-10 17:08:35.549  INFO 4161 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-10 17:08:35.736  INFO 4161 --- [           main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2017-03-10 17:08:36.877  INFO 4161 --- [           main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService  'taskScheduler'
+2017-03-10 17:08:38.522  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/restart || /admin/restart.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.restart.RestartMvcEndpoint.invoke()
+2017-03-10 17:08:38.524  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/refresh || /admin/refresh.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-03-10 17:08:38.527  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/bus/refresh],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.RefreshBusEndpoint.refresh(java.lang.String)
+2017-03-10 17:08:38.527  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/bus/env],methods=[POST]}" onto public void org.springframework.cloud.bus.endpoint.EnvironmentBusEndpoint.env(java.util.Map<java.lang.String, java.lang.String>,java.lang.String)
+2017-03-10 17:08:38.529  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/metrics/{name:.*}],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.MetricsMvcEndpoint.value(java.lang.String)
+2017-03-10 17:08:38.530  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/metrics || /admin/metrics.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-03-10 17:08:38.533  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/pause || /admin/pause.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-03-10 17:08:38.535  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/resume || /admin/resume.json],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.endpoint.GenericPostableMvcEndpoint.invoke()
+2017-03-10 17:08:38.541  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/info || /admin/info.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.EndpointMvcAdapter.invoke()
+2017-03-10 17:08:38.543  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/env],methods=[POST]}" onto public java.lang.Object org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.value(java.util.Map<java.lang.String, java.lang.String>)
+2017-03-10 17:08:38.544  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/env/reset],methods=[POST]}" onto public java.util.Map<java.lang.String, java.lang.Object> org.springframework.cloud.context.environment.EnvironmentManagerMvcEndpoint.reset()
+2017-03-10 17:08:38.551  INFO 4161 --- [           main] o.s.b.a.e.mvc.EndpointHandlerMapping     : Mapped "{[/admin/health || /admin/health.json],methods=[GET],produces=[application/vnd.spring-boot.actuator.v1+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.mvc.HealthMvcEndpoint.invoke(javax.servlet.http.HttpServletRequest,java.security.Principal)
+2017-03-10 17:08:39.665  INFO 4161 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'config-server:config-monitor:8888.springCloudBusInput' has 1 subscriber(s).
+2017-03-10 17:08:40.239  INFO 4161 --- [           main] o.s.i.codec.kryo.CompositeKryoRegistrar  : configured Kryo registration [40, java.io.File] with serializer org.springframework.integration.codec.kryo.FileSerializer
+2017-03-10 17:08:40.522  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Registering beans for JMX exposure on startup
+2017-03-10 17:08:40.580  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'rabbitConnectionFactory' has been autodetected for JMX exposure
+2017-03-10 17:08:40.582  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'integrationMbeanExporter' has been autodetected for JMX exposure
+2017-03-10 17:08:40.584  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'configurationPropertiesRebinder' has been autodetected for JMX exposure
+2017-03-10 17:08:40.585  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshEndpoint' has been autodetected for JMX exposure
+2017-03-10 17:08:40.587  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'restartEndpoint' has been autodetected for JMX exposure
+2017-03-10 17:08:40.592  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'refreshScope' has been autodetected for JMX exposure
+2017-03-10 17:08:40.594  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Bean with name 'environmentManager' has been autodetected for JMX exposure
+2017-03-10 17:08:40.600  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'environmentManager': registering with JMX server as MBean [org.springframework.cloud.context.environment:name=environmentManager,type=EnvironmentManager]
+2017-03-10 17:08:40.641  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'restartEndpoint': registering with JMX server as MBean [org.springframework.cloud.context.restart:name=restartEndpoint,type=RestartEndpoint]
+2017-03-10 17:08:40.674  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshScope': registering with JMX server as MBean [org.springframework.cloud.context.scope.refresh:name=refreshScope,type=RefreshScope]
+2017-03-10 17:08:40.729  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'integrationMbeanExporter': registering with JMX server as MBean [org.springframework.integration.monitor:name=integrationMbeanExporter,type=IntegrationMBeanExporter]
+2017-03-10 17:08:40.808  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'configurationPropertiesRebinder': registering with JMX server as MBean [org.springframework.cloud.context.properties:name=configurationPropertiesRebinder,context=4f88a1b9,type=ConfigurationPropertiesRebinder]
+2017-03-10 17:08:40.815  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'rabbitConnectionFactory': registering with JMX server as MBean [org.springframework.amqp.rabbit.connection:name=rabbitConnectionFactory,type=CachingConnectionFactory]
+2017-03-10 17:08:40.843  INFO 4161 --- [           main] o.s.j.e.a.AnnotationMBeanExporter        : Located managed bean 'refreshEndpoint': registering with JMX server as MBean [org.springframework.cloud.endpoint:name=refreshEndpoint,type=RefreshEndpoint]
+2017-03-10 17:08:40.854  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering beans for JMX exposure on startup
+2017-03-10 17:08:40.855  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusOutput
+2017-03-10 17:08:40.865  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusOutput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusOutput]
+2017-03-10 17:08:40.982  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel errorChannel
+2017-03-10 17:08:40.984  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=errorChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=errorChannel]
+2017-03-10 17:08:41.039  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel nullChannel
+2017-03-10 17:08:41.041  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=nullChannel': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=nullChannel]
+2017-03-10 17:08:41.060  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageChannel springCloudBusInput
+2017-03-10 17:08:41.062  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageChannel,name=springCloudBusInput': registering with JMX server as MBean [org.springframework.integration:type=MessageChannel,name=springCloudBusInput]
+2017-03-10 17:08:41.085  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Registering MessageHandler errorLogger
+2017-03-10 17:08:41.089  INFO 4161 --- [           main] o.s.i.monitor.IntegrationMBeanExporter   : Located managed bean 'org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal': registering with JMX server as MBean [org.springframework.integration:type=MessageHandler,name=errorLogger,bean=internal]
+2017-03-10 17:08:41.536  INFO 4161 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase -2147482648
+2017-03-10 17:08:41.929  INFO 4161 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@5560eada: startup date [Fri Mar 10 17:08:41 UTC 2017]; root of context hierarchy
+2017-03-10 17:08:42.003  INFO 4161 --- [           main] trationDelegate$BeanPostProcessorChecker : Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$6791e30b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2017-03-10 17:08:42.402  INFO 4161 --- [           main] m.s.datawerks.ConfigServerApplication    : The following profiles are active: config-monitor
+2017-03-10 17:08:42.423  INFO 4161 --- [           main] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@129a8541: startup date [Fri Mar 10 17:08:42 UTC 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f88a1b9
+2017-03-10 17:08:42.951  INFO 4161 --- [           main] o.s.c.support.GenericApplicationContext  : Refreshing org.springframework.context.support.GenericApplicationContext@2e064165: startup date [Fri Mar 10 17:08:42 UTC 2017]; root of context hierarchy
+2017-03-10 17:08:43.065  INFO 4161 --- [           main] m.s.datawerks.ConfigServerApplication    : Started ConfigServerApplication in 1.5 seconds (JVM running for 30.936)
+2017-03-10 17:08:44.454  INFO 4161 --- [           main] o.s.a.r.c.CachingConnectionFactory       : Created new connection: SimpleConnection@60058c31 [delegate=amqp://fpmjbsta@107.167.185.156:5672/fpmjbsta, localPort= 44826]
+2017-03-10 17:08:44.869  INFO 4161 --- [           main] o.s.integration.channel.DirectChannel    : Channel 'config-server:config-monitor:8888.springCloudBusOutput' has 1 subscriber(s).
+2017-03-10 17:08:44.878  INFO 4161 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 0
+2017-03-10 17:08:44.922  INFO 4161 --- [           main] o.s.c.c.m.FileMonitorConfiguration       : Not monitoring for local config changes
+2017-03-10 17:08:44.928  INFO 4161 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-03-10 17:08:44.928  INFO 4161 --- [           main] o.s.i.channel.PublishSubscribeChannel    : Channel 'config-server:config-monitor:8888.errorChannel' has 1 subscriber(s).
+2017-03-10 17:08:44.928  INFO 4161 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started _org.springframework.integration.errorLogger
+2017-03-10 17:08:44.930  INFO 4161 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147482647
+2017-03-10 17:08:44.963  INFO 4161 --- [           main] o.s.c.s.b.r.RabbitMessageChannelBinder   : declaring queue for inbound: springCloudBusInput.anonymous.jMF_A5yAR5Kr7I1slbDVFw, bound to: springCloudBusInput
+2017-03-10 17:08:45.775  INFO 4161 --- [           main] o.s.i.a.i.AmqpInboundChannelAdapter      : started inbound.springCloudBusInput.anonymous.HVT87lEOTtKSZ24JTSzWKQ
+2017-03-10 17:08:45.776  INFO 4161 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : Adding {message-handler:inbound.springCloudBusInput.default} as a subscriber to the 'bridge.springCloudBusInput' channel
+2017-03-10 17:08:45.776  INFO 4161 --- [           main] o.s.i.endpoint.EventDrivenConsumer       : started inbound.springCloudBusInput.default
+2017-03-10 17:08:45.778  INFO 4161 --- [           main] o.s.c.support.DefaultLifecycleProcessor  : Starting beans in phase 2147483647
+2017-03-10 17:08:46.069  INFO 4161 --- [           main] s.b.c.e.t.TomcatEmbeddedServletContainer : Tomcat started on port(s): 8888 (http)
+2017-03-10 17:08:46.073  INFO 4161 --- [           main] m.s.datawerks.ConfigServerApplication    : Started ConfigServerApplication in 26.123 seconds (JVM running for 33.944)
+2017-03-10 17:12:50.940  INFO 4161 --- [nio-8888-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring FrameworkServlet 'dispatcherServlet'
+2017-03-10 17:12:50.941  INFO 4161 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization started
+2017-03-10 17:12:51.039  INFO 4161 --- [nio-8888-exec-1] o.s.web.servlet.DispatcherServlet        : FrameworkServlet 'dispatcherServlet': initialization completed in 97 ms
+2017-03-10 17:12:56.163  INFO 4161 --- [nio-8888-exec-1] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@76e70209: startup date [Fri Mar 10 17:12:56 UTC 2017]; root of context hierarchy
+2017-03-10 17:12:56.327  INFO 4161 --- [nio-8888-exec-1] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/tmp/config-repo-1246509150494814884/file-upload-service.properties
+2017-03-10 17:12:56.327  INFO 4161 --- [nio-8888-exec-1] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@76e70209: startup date [Fri Mar 10 17:12:56 UTC 2017]; root of context hierarchy
+2017-03-10 17:13:19.283  INFO 4161 --- [nio-8888-exec-3] s.c.a.AnnotationConfigApplicationContext : Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@e15684d: startup date [Fri Mar 10 17:13:19 UTC 2017]; root of context hierarchy
+2017-03-10 17:13:19.313  INFO 4161 --- [nio-8888-exec-3] o.s.c.c.s.e.NativeEnvironmentRepository  : Adding property source: file:/tmp/config-repo-1246509150494814884/file-upload-service.properties
+2017-03-10 17:13:19.314  INFO 4161 --- [nio-8888-exec-3] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@e15684d: startup date [Fri Mar 10 17:13:19 UTC 2017]; root of context hierarchy
+2017-03-10 17:28:13.773  INFO 4161 --- [       Thread-8] ationConfigEmbeddedWebApplicationContext : Closing org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f88a1b9: startup date [Fri Mar 10 17:08:24 UTC 2017]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@64a50cf2
+2017-03-10 17:28:13.775  INFO 4161 --- [       Thread-8] s.c.a.AnnotationConfigApplicationContext : Closing org.springframework.context.annotation.AnnotationConfigApplicationContext@129a8541: startup date [Fri Mar 10 17:08:42 UTC 2017]; parent: org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext@4f88a1b9
+2017-03-10 17:28:13.868  INFO 4161 --- [       Thread-8] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147483647
+2017-03-10 17:28:13.869  INFO 4161 --- [       Thread-8] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 2147482647
+2017-03-10 17:28:14.001  INFO 4161 --- [       Thread-8] o.s.a.r.l.SimpleMessageListenerContainer : Waiting for workers to finish.
+2017-03-10 17:28:14.320  INFO 4161 --- [       Thread-8] o.s.a.r.l.SimpleMessageListenerContainer : Successfully waited for workers to finish.
+2017-03-10 17:28:14.321  INFO 4161 --- [       Thread-8] o.s.i.a.i.AmqpInboundChannelAdapter      : stopped inbound.springCloudBusInput.anonymous.HVT87lEOTtKSZ24JTSzWKQ
+2017-03-10 17:28:14.321  INFO 4161 --- [       Thread-8] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase 0
+2017-03-10 17:28:14.322  INFO 4161 --- [       Thread-8] o.s.i.endpoint.EventDrivenConsumer       : Removing {logging-channel-adapter:_org.springframework.integration.errorLogger} as a subscriber to the 'errorChannel' channel
+2017-03-10 17:28:14.323  INFO 4161 --- [       Thread-8] o.s.i.channel.PublishSubscribeChannel    : Channel 'config-server:config-monitor:8888.errorChannel' has 0 subscriber(s).
+2017-03-10 17:28:14.325  INFO 4161 --- [       Thread-8] o.s.i.endpoint.EventDrivenConsumer       : stopped _org.springframework.integration.errorLogger
+2017-03-10 17:28:14.325  INFO 4161 --- [       Thread-8] o.s.c.support.DefaultLifecycleProcessor  : Stopping beans in phase -2147482648
+2017-03-10 17:28:14.329  INFO 4161 --- [       Thread-8] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService 'taskScheduler'
+2017-03-10 17:28:14.329  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans on shutdown
+2017-03-10 17:28:14.330  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Unregistering JMX-exposed beans
+2017-03-10 17:28:14.335  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: springCloudBusOutput
+2017-03-10 17:28:14.335  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: errorChannel
+2017-03-10 17:28:14.335  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: nullChannel
+2017-03-10 17:28:14.335  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: springCloudBusInput
+2017-03-10 17:28:14.335  INFO 4161 --- [       Thread-8] o.s.i.monitor.IntegrationMBeanExporter   : Summary on shutdown: _org.springframework.integration.errorLogger.handler
+2017-03-10 17:28:14.336  INFO 4161 --- [       Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans on shutdown
+2017-03-10 17:28:14.336  INFO 4161 --- [       Thread-8] o.s.j.e.a.AnnotationMBeanExporter        : Unregistering JMX-exposed beans
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+[INFO] Total time: 20:00 min
+[INFO] Finished at: 2017-03-10T17:28:14+00:00

@@ -1,4 +1,4 @@
-package me.soma.datawerks.controller;
+package me.soma.datawerks.upload.controller;
 
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
