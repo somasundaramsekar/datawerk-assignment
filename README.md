@@ -25,3 +25,5 @@ The tools used are
 4. Java 8 streams employed where possible
 5. java.io streams are used to enable processing large files
 6. Spring data JPA is used for persistence
+
+file-upload-service can be accessed at port 9091
